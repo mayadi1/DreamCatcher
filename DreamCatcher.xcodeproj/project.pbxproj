@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187BA99C1CEB8FC1000F64BE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187BA99B1CEB8FC1000F64BE /* DetailViewController.m */; };
 		18E74D091CEA01C000782CB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E74D081CEA01C000782CB6 /* main.m */; };
 		18E74D0C1CEA01C000782CB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E74D0B1CEA01C000782CB6 /* AppDelegate.m */; };
 		18E74D0F1CEA01C000782CB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E74D0E1CEA01C000782CB6 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187BA99A1CEB8FC1000F64BE /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		187BA99B1CEB8FC1000F64BE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		18E74D041CEA01C000782CB6 /* DreamCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E74D081CEA01C000782CB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18E74D0A1CEA01C000782CB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 				18E74D0D1CEA01C000782CB6 /* ViewController.h */,
 				18E74D0E1CEA01C000782CB6 /* ViewController.m */,
 				18E74D101CEA01C000782CB6 /* Main.storyboard */,
+				187BA99A1CEB8FC1000F64BE /* DetailViewController.h */,
+				187BA99B1CEB8FC1000F64BE /* DetailViewController.m */,
 				18E74D131CEA01C000782CB6 /* Assets.xcassets */,
 				18E74D151CEA01C000782CB6 /* LaunchScreen.storyboard */,
 				18E74D181CEA01C000782CB6 /* Info.plist */,
@@ -110,6 +115,7 @@
 				TargetAttributes = {
 					18E74D031CEA01C000782CB6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PE9MW7PNB5;
 					};
 				};
 			};
@@ -152,6 +158,7 @@
 				18E74D0F1CEA01C000782CB6 /* ViewController.m in Sources */,
 				18E74D0C1CEA01C000782CB6 /* AppDelegate.m in Sources */,
 				18E74D091CEA01C000782CB6 /* main.m in Sources */,
+				187BA99C1CEB8FC1000F64BE /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DreamCatcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MohamedA.DreamCatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -274,10 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = DreamCatcher/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MohamedA.DreamCatcher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -300,6 +313,7 @@
 				18E74D1D1CEA01C000782CB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
